@@ -1,0 +1,217 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+.app-header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.app-footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Main Content */
+main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 12px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px; 
+  margin-bottom: 30px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  width: 90%; 
+  max-width: 700px; 
+  margin: 20px auto; 
+}
+
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+/* Form card specific styles */
+.form-card {
+  border: 1px solid #e0e0e0; /* Light border for form card */
+}
+
+/* Student list card specific styles */
+.student-list-card {
+  border: 1px solid #e0e0e0; /* Light border for student list card */
+}
+
+
+/* Form Card Styling */
+.form-card .form input {
+  display: block;
+  width: 90%;
+  margin: 15px 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+.form input:focus {
+  border-color: #4CAF50;
+  outline:#333;
+}
+
+.form .btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+.btn-update {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-update:hover {
+  background-color: #0069d9;
+}
+
+/* Student List Styling */
+.student-list-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.2s;
+}
+
+.student-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions .btn {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .student-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    margin-top: 10px;
+  }
+
+  .form input {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+/* Center the toast container */
+.Toastify__toast-container {
+  left: 50%; /* Center the container horizontally */
+  transform: translateX(-50%); /* Shift it left by half its width */
+}
+
+/* Center the text inside the toast */
+.Toastify__toast {
+  text-align: center; /* Center text within each toast */
+}
+
+/* Optional: Center the toast vertically (if desired) */
+.Toastify__toast-container--top-center {
+  top: 20px; /* Adjust the distance from the top */
+}
+
+/* Optional: Center the toast vertically for bottom-center */
+.Toastify__toast-container--bottom-center {
+  bottom: 20px; /* Adjust the distance from the bottom */
+}
+
